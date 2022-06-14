@@ -1,4 +1,4 @@
-import { DataTypes } from 'sequelize/types';
+import { DataTypes } from 'sequelize';
 import { db } from '../../db/connection';
 import { createdUpdated } from '../helpers/createdUpdated';
 
@@ -20,7 +20,8 @@ export const Food = db.define( 'food', {
     food_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true
+        autoIncrement: true,
+        allowNull: false
     },
     product_id: {
         type: DataTypes.INTEGER,
@@ -28,7 +29,7 @@ export const Food = db.define( 'food', {
     },
     ingredients: {
         type: DataTypes.STRING,
-        allowNull: true
+        allowNull: false
     },
     food_type: {
         type: DataTypes.INTEGER,

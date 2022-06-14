@@ -39,7 +39,7 @@ export const People = db.define( 'people', {
         unique: true
     },
     birthday: {
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         allowNull: false
     },
     phone: {

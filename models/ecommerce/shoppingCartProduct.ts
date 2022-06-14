@@ -1,4 +1,4 @@
-import { DataTypes } from 'sequelize/types';
+import { DataTypes } from 'sequelize';
 import { db } from '../../db/connection';
 import { createdUpdated } from '../helpers/createdUpdated';
 // CREATE TABLE IF NOT EXISTS db_restaurant.shopping_cart_product (

@@ -1,4 +1,4 @@
-import { DataTypes } from 'sequelize/types';
+import { DataTypes } from 'sequelize';
 import { db } from '../../db/connection';
 import { createdUpdated } from '../helpers/createdUpdated';
 
@@ -49,7 +49,7 @@ export const Order = db.define( 'order', {
     },
     table_id: {
         type: DataTypes.INTEGER,
-        allowNull: false
+        allowNull: true
     },
     state: {
         type: DataTypes.BOOLEAN,
